@@ -10,7 +10,7 @@ class DirectedGraph:
     Adds a new vertex to the graph, initializes it with an empty set of edges, and returns the index of the vertex.
     '''
     def add_vertex(self, value=None):
-        index = len(vertices)
+        index = len(self.vertices)
         self.vertices.append(value)
         self.edges.append(set())
         return index
